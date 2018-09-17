@@ -3,6 +3,7 @@
   <groupId>DevOpsExample</groupId>
   <artifactId>DevOpsExample</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
 
 	<dependencies>
 		<dependency>
@@ -24,4 +25,7 @@
 		    <scope>provided</scope>
 		</dependency>
 	</dependencies>
+	
+
+	
 </project>
