@@ -17,7 +17,7 @@ public class OperationsTest {
 
 	@Test
 	public void testAddition() {
-		assertEquals(20, operation.addition(value2, value1), 0);
+		assertEquals(21, operation.addition(value2, value1), 0);
 	}
 
 }

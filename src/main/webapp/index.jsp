@@ -12,7 +12,6 @@
 <body>
 
 	<% out.print("<h1>My Addition Application</h1>"); %>
-	DEPLOYMENT OP AMAZON IS GELUKT!!!
 	<hr>
 	Welcome to the addition Application
 	<br> Current Time is :
