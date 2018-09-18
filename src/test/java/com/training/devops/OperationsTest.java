@@ -19,10 +19,5 @@ public class OperationsTest {
 	public void testAddition() {
 		assertEquals(20, operation.addition(value2, value1), 0);
 	}
-	
-	@Test
-	public void testMultiplication() {
-		assertEquals(64, operation.multiplication(value2, value1), 0);
-	}
 
 }

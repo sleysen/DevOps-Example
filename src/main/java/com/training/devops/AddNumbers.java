@@ -36,21 +36,11 @@ public class AddNumbers extends HttpServlet {
 		
 		Operations operation = new Operations();	
 		response.setContentType("text/html");
-		int result;
-		String operation_name = "";
-		
-		String operation_request = request.getParameter("sb");
-		if(operation_request.equals("A+B")) {
-			result = operation.addition(a, b);
-			operation_name = "addition";
-		}
-		else {			
-			result = operation.multiplication(a,b);
-			operation_name = "multiplication";
-		}
+
+		int result = operation.addition(a, b);
+
 		
 		 request.setAttribute("result", result);
-		 request.setAttribute("operation_request", operation_name);
 		 request.getRequestDispatcher("/result.jsp").include(request, response);
 
 		
