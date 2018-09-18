@@ -38,9 +38,13 @@ public class AddNumbers extends HttpServlet {
 		int result = operation.addition(a, b);
 
 		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
-		out.print("<h1>Addition Result </h1>");
-		out.print("The result is : <b>" + result + "</b>");
+		//PrintWriter out = response.getWriter();
+		//out.print("<h1>Addition Result </h1>");
+		//out.print("The result is : <b>" + result + "</b>");
+	    request.setAttribute("result", result);
+	    request.getRequestDispatcher("/result.jsp").include(request, response);
+		//response.sendRedirect("result.jsp");
+		
 
 	}
 

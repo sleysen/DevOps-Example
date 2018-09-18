@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Hello from JSP</title>
+<title>My Addition Application</title>
 </head>
 <body>
 
@@ -15,9 +15,9 @@
 	<%=new java.util.Date()%>
 	<hr>
 	<form id=fr_add name=fr_add method=get action="AddNumbers">
-		A : <input type=text value="" name=a><br> B : <input
-			type=text value="" name=b><br> <input type=submit
-			name=sb value="Add A+B">
+		A : <input type=text value="" name=a><br> 
+		B : <input type=text value="" name=b><br> 
+			<input type=submit name=sb value="Add A+B">
 	</form>
 </body>
 </html>
