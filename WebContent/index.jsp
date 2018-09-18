@@ -14,10 +14,12 @@
 	<br> Current Time is :
 	<%=new java.util.Date()%>
 	<hr>
+	
 	<form id=fr_add name=fr_add method=get action="AddNumbers">
 		A : <input type=text value="" name=a><br> 
 		B : <input type=text value="" name=b><br> 
-			<input type=submit name=sb value="Add A+B">
+			<input type=submit name=sb value="A+B">
+			<input type=submit name=sb value="A*B">
 	</form>
 </body>
 </html>

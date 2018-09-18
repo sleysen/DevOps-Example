@@ -7,8 +7,8 @@
 <title>Result of the operations</title>
 </head>
 <body>
-	<h1>Addition Result</h1>
-	The result is : 
+	<h1>Operations Result</h1>
+	The result is of the ${operation_request} :
 	<b name="result"> ${result}</b>
 </body>
 </html>

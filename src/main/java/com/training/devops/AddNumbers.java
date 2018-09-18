@@ -33,18 +33,30 @@ public class AddNumbers extends HttpServlet {
 
 		String b_string = request.getParameter("b");
 		int b = Integer.parseInt(b_string);
-
-		Operations operation = new Operations();
-		int result = operation.addition(a, b);
-
+		
+		Operations operation = new Operations();	
 		response.setContentType("text/html");
+		int result;
+		String operation_name = "";
+		
+		String operation_request = request.getParameter("sb");
+		if(operation_request.equals("A+B")) {
+			result = operation.addition(a, b);
+			operation_name = "addition";
+		}
+		else {			
+			result = operation.multiplication(a,b);
+			operation_name = "multiplication";
+		}
+		
+		 request.setAttribute("result", result);
+		 request.setAttribute("operation_request", operation_name);
+		 request.getRequestDispatcher("/result.jsp").include(request, response);
+
+		
 		//PrintWriter out = response.getWriter();
 		//out.print("<h1>Addition Result </h1>");
 		//out.print("The result is : <b>" + result + "</b>");
-	    request.setAttribute("result", result);
-	    request.getRequestDispatcher("/result.jsp").include(request, response);
-		//response.sendRedirect("result.jsp");
-		
 
 	}
 
